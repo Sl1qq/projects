@@ -39,12 +39,9 @@ function SelectTextByTask(select, task) {
 }
 
 function GetSnackbarParams(task) {
-    switch (task) {
-        case "task1": return ['#ecf0f1', '#27ae60', 'bottom'];
-            break;
-        case "task2": return ['#ecf0f1', '#8e44ad', 'right'];
-            break;
-        case "task3": return ['#ecf0f1', '#34495e', 'right'];
-            break;
-    }
+    return {
+        "task1": ['#ecf0f1', '#27ae60', 'bottom'],
+        "task2": ['#ecf0f1', '#8e44ad', 'right'],
+        "task3": ['#ecf0f1', '#34495e', 'right'],
+    }[task];
 }

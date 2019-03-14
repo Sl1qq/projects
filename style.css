@@ -1,0 +1,7 @@
+#snack {
+	font-weight: bold;
+	position: absolute;
+	padding: 20px 30px;
+	display: none;
+	cursor: pointer;
+}
